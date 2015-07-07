@@ -1,0 +1,60 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+	 <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            font-size: 15px;
+        }
+		</style>
+	<script src="js/echarts-all.js"></script>
+</head>
+<body>
+     <div id="main" style="width:100%"></div>
+ 
+  	<script type="text/javascript">
+		
+  	    var myChart = echarts.init(document.getElementById('main'));
+  	    var option = {
+  	        title: {
+  	            text: '安全防护网',
+  	            textStyle:{
+					color: 'white',
+				},
+  	            // x: 'center',
+				x: '0',
+  	            y: '50'
+  	        },
+  	        tooltip: {
+  	            shou: true,
+
+  	            trigger: 'item',
+  	            formatter: "{a} <br/>{b} : {c} ({d}%)"
+  	        },
+
+  	        calculable: true,
+  	        series: [
+                {
+                    name: 'pie1',
+                    show: true,
+                    type: 'pie',
+                    radius: '55%',
+                    center: ['50%', '50%'],
+
+                    data: [
+                       {value: 20.7, name: 'XSS' },
+					   {value: 12.1, name: 'SQL注入' },
+                       { value: 34.1, name: '其他' },
+                       { value: 33.1, name: '应用程序\n漏洞攻击' }
+  ]
+                }
+  	        ]
+  	    };
+		window.onresize = myChart.resize();
+  	    myChart.setOption(option);
+	</script>
+</body>
+</html>

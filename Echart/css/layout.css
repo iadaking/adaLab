@@ -1,0 +1,10 @@
+html,body { font-family:Verdana; font-size:12px; margin:0; height:100%;}
+div{border:0px solid red;}
+#container {margin:0 auto; width:100%;height:100%;}
+#left { float:left; width:25%; height:100%;}
+#leftTop{float:left;width: 100%;height: 50%;}
+#leftFoot{float:left;width: 100%;height:50%;}
+#right { float:right; width:25%; height:100%;}
+#rightTop{float:right;width: 100%;height:50%;}
+#rightFoot{float:right;width: 100%;height: 50%;}
+#content {width: 100%; height:100%;border:0px solid blue;}
