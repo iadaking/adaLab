@@ -1,0 +1,62 @@
+<div class="user">
+	<nav class="user-navbar clearfix">
+		<div class="user-navbar-left">
+			<a href="#/">
+				<img src="./modules/User/images/user-arrow-prev.png" alt="">
+			</a>
+		</div>
+		<div class="user-navbar-right">
+			<a href="#/user/set">
+				<img src="./modules/User/images/user-set.png" alt="">
+			</a>
+		</div>
+	</nav>
+	<section class="user-info" my-userinfo >
+		<div class="user-info-photo">
+			<div class="user-img">
+				<img src="{{ user.headimg }}" alt="">
+			</div>
+		</div>
+		<div class="user-info-name">
+			{{ user.username }}
+		</div>
+		<div class="user-info-sex clearfix">
+			<div class="user-info-sex-line"></div>
+			<div class="user-info-sex-cont">
+				<img src="./modules/User/images/base-sex-boy.png" alt="" ng-if=" user.sex == 'M' ">
+				<img class="girlIcon" src="./modules/User/images/base-sex-girl.png" alt="" ng-if=" user.sex == 'F' ">
+				<span class="sex">{{ user.sex=="M"?"男":"女" }}</span>
+				<span class="divider">|</span>
+				<span class="birth">{{ user.birthday }}</span>
+			</div>
+			<div class="user-info-sex-line"></div>
+		</div>
+	</section>
+	<section class="user-picture">
+		<div class="user-picture-container clearfix">		
+			<ul>
+				<li class="user-picture-camera">
+					<img src="./modules/User/images/user-camera.png" alt="">
+				</li>
+				<li>
+					<img src="./modules/User/images/user-demo-picture0.png" alt="">
+				</li>
+				<li>
+					<img src="./modules/User/images/user-demo-picture1.png" alt="">
+				</li>
+				<li>
+					<img src="./modules/User/images/user-demo-picture2.png" alt="">
+				</li>
+				<li>
+					<img src="./modules/User/images/user-demo-picture3.png" alt="">
+				</li>
+				<li>
+					<img src="./modules/User/images/user-demo-picture4.png" alt="">
+				</li>
+				<li>
+					<img src="./modules/User/images/user-demo-picture5.png" alt="">
+				</li>
+			</ul>
+		</div>
+	</section>
+</div>

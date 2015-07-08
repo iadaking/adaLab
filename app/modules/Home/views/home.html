@@ -1,0 +1,114 @@
+<div class="index">
+	<nav class="index-navbar clearfix">
+		<a href="#/user" class="index-navbar-left">
+			<img src="./modules/Home/images/index-user.png" alt="">
+		</a>
+		<a href="#" class="index-navbar-right">
+			<img src="./modules/Home/images/index-list.png" alt="">
+		</a>
+	</nav>
+	<section class="index-content">
+		<div class="index-content-container" my-choosetag >
+			<div class="index-img sandy">
+				<img src="./modules/Home/images/index-sandy.png" >
+			</div>
+			<div class="index-img coffee">
+				<img src="./modules/Home/images/index-coffee.png" ng-if="!showCoffee">
+				<img src="./modules/Home/images/index-coffee-inverse.png" ng-if="showCoffee">
+			</div>
+			<div class="index-img book">
+				<img src="./modules/Home/images/index-book.png" ng-if="!showBook">
+				<img src="./modules/Home/images/index-book-inverse.png" ng-if="showBook">
+			</div>
+			<div class="index-img chat">
+				<img src="./modules/Home/images/index-chat.png" ng-if="!showChat">
+				<img src="./modules/Home/images/index-chat-inverse.png" ng-if="showChat">
+			</div>
+			<div class="index-img game">
+				<img src="./modules/Home/images/index-game.png" ng-if="!showGame">
+				<img src="./modules/Home/images/index-game-inverse.png" ng-if="showGame">
+			</div>
+			<div class="index-img film">
+				<img src="./modules/Home/images/index-film.png" ng-if="!showFilm">
+				<img src="./modules/Home/images/index-film-inverse.png" ng-if="showFilm">
+			</div>
+			<div class="index-img ktv">
+				<img src="./modules/Home/images/index-ktv.png" ng-if="!showKtv">
+				<img src="./modules/Home/images/index-ktv-inverse.png" ng-if="showKtv">
+			</div>		
+		</div>
+	</section>
+	<section class="index-desc" ng-if="showDesc">
+		<div class="index-desc-container clearfix">
+			<div class="index-desc-img">
+				<div class="coffee" ng-if="showCoffee">
+					<img src="./modules/Home/images/index-coffee-inverse.png" alt="">
+				</div>
+				<div class="book" ng-if="showBook">
+					<img src="./modules/Home/images/index-book-inverse.png" alt="">
+				</div>
+				<div class="chat" ng-if="showChat">
+					<img src="./modules/Home/images/index-chat-inverse.png" alt="">
+				</div>
+				<div class="game" ng-if="showGame">
+					<img src="./modules/Home/images/index-game-inverse.png" alt="">
+				</div>
+				<div class="film" ng-if="showFilm">
+					<img src="./modules/Home/images/index-film-inverse.png" alt="">
+				</div>
+				<div class="ktv" ng-if="showKtv">
+					<img src="./modules/Home/images/index-ktv-inverse.png" alt="">
+				</div>
+			</div>
+			<div class="index-desc-cont">
+				<div class="coffee" ng-if="showCoffee">
+					<p>人专注于自己的内心的时候，</p>
+					<p>是一种奇妙的美,</p>
+					<p>这种美 就像咖啡的味道,让人陶醉。</p>
+				</div>
+				<div class="book" ng-if="showBook">
+					<p>书籍的内容</p>
+					<p>书籍的内容</p>
+					<p>书籍的内容</p>
+				</div>
+				<div class="chat" ng-if="showChat">
+					<p>聊天的内容</p>
+					<p>聊天的内容</p>
+					<p>聊天的内容</p>
+				</div>
+				<div class="game" ng-if="showGame">
+					<p>游戏的内容</p>
+					<p>游戏的内容</p>
+					<p>游戏的内容</p>
+				</div>
+				<div class="film" ng-if="showFilm">
+					<p>电影的内容</p>
+					<p>电影的内容</p>
+					<p>电影的内容</p>
+				</div>
+				<div class="ktv" ng-if="showKtv">
+					<p>KTV的内容</p>
+					<p>KTV的内容</p>
+					<p>KTV的内容</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="index-sex" ng-if="showSex">
+		<div class="index-sex-container clearfix">
+			<div class="wrap clearfix">
+				<div class="boy" ng-click="changeSex('boy')">
+					<img src="./modules/Home/images/base-sex-boy.png" alt="" ng-if="sex=='F'">
+				</div>
+				<div class="girl" ng-click="changeSex('girl')">
+					<img src="./modules/Home/images/base-sex-girl.png" alt="" ng-if="sex=='M'">
+				</div>
+				<div class="state" ng-class="{boy:sex=='M', girl:sex=='F'}">
+					<img src="./modules/Home/images/base-sex-boy-active.png" alt="" ng-if="sex=='M'">
+					<img src="./modules/Home/images/base-sex-girl-active.png" alt="" ng-if="sex=='F'">
+				</div>
+			</div>
+			<button type="button" class="matchBtn" ng-click="match()">开始匹配</button>
+		</div>
+	</section>
+</div>

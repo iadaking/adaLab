@@ -1,0 +1,21 @@
+/* CSS Document */
+body{ line-height:32px; }
+body *,h2,h3,p,ul,li,dl,dt,dd{ display:block; list-style: none; margin:0px; padding:0px;font-family: "汉仪细中圆简"}
+a:hover{ color:#CCC}
+a:visited{ text-decoration: underline}
+a:link{ text-decoration:none}
+.header,.zhi,.bottom{ width:640px; margin:0px auto; overflow:hidden; background:#FFF}
+.zhi{ height:80px; width:640px; background:#ff6478; }
+.zhi div{ width:80px; float:left; height:80px; line-height:80px;}
+.zhi div img{margin:0px auto; padding:24px 0px}
+.zhi span{ width:80px; float:right; height:80px; line-height:80px;}
+.zhi span img{ margin:0px auto; padding:25px 0px }
+.zhi h2{ width:480px; float:left; font-size:36px; font-family: "汉仪细中圆简"; height:80px; line-height:80px; text-align:center; font-weight:normal; color:#FFF;}
+.xiang{ width:640px; overflow:hidden}
+.xiang dt{ border-bottom: solid 1px #f0f0f0; height:50px; line-height:50px; text-align:center; font-size:20px}
+.xiang dd{ width:620px; padding:10px; overflow:hidden}
+.xiang dd img{ text-align:center}
+.xiang dd ol{ display:inline}
+.xiang dd ol li{ text-indent:2em; padding:10px 0px;}
+
+

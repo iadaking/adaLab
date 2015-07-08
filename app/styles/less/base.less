@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+html{
+  width: 100%;
+}
+body {
+    width: 100%;
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+
+
+/*清除浮动*/
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}
+.clearfix{zoom:1}
+
+
+.base-app{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+
+
+.base-view.ng-enter, .base-view.ng-leave{
+  transition: 0.3s linear all;
+  -webkit-transition: 0.3s linear all;
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 1;
+  overflow: hidden;
+}
+.base-view.ng-leave{
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  z-index: 2;
+}
+.base-view.ng-leave.ng-leave-active{
+  width: 0;
+  height: 0;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+}

@@ -1,0 +1,33 @@
+<div class="Chat" my-chat>
+	<nav class="chat-navbar clearfix">
+		<div class="chat-navbar-left" ng-click="cancelChat()">
+			<img src="./modules/Match/images/user-arrow-prev.png" alt="">
+			<span>取消</span>
+		</div>
+		<div class="chat-navbar-right" ng-click="accept()">		
+			<span>接受</span>
+			<img src="./modules/Match/images/user-arrow-next.png" alt="">
+		</div>
+	</nav>
+	<div class="chat-content">
+		<div class="chat-content-container">
+<!-- 			<div class="message send">
+				<p>我是发送信息我是发送信息我是发送信息我是送信息我是发送信息</p>
+				<span>
+					<img src="./modules/Match/images/chat-girl.png">
+				</span>
+			</div>
+			<div class="message receive">
+				<span>
+					<img src="./modules/Match/images/chat-boy.png">
+				</span>
+				<p>我是接受信息我是接受信息我</p>
+			</div> -->
+		</div>
+	</div>
+	<div class="chat-input">
+		<img src="./modules/Match/images/chat-face.png" >
+		<input type="text" ng-model="sendCont" required focus>
+		<img src="./modules/Match/images/chat-send.png" ng-click="send()">
+	</div>
+</div>

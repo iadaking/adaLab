@@ -1,0 +1,22 @@
+/* CSS Document */
+body{ line-height:32px; }
+body *,h2,h3,p,ul,li,dl,dt,dd{ display:block; list-style: none; margin:0px; padding:0px;font-family: "汉仪细中圆简"}
+a:hover{ color:#CCC}
+a:visited{ text-decoration: underline}
+a:link{ text-decoration:none}
+.header,.zhi,.bottom{ width:640px; margin:0px auto; overflow:hidden; background:#FFF}
+.zhi{ height:80px; width:640px; background:#ff6478; }
+.zhi div{ width:80px; float:left; height:80px; line-height:80px;}
+.zhi div img{margin:0px auto; padding:24px 0px}
+.zhi span{ width:80px; float:right; height:80px; line-height:80px;}
+.zhi span img{ margin:0px auto; padding:17px 0px }
+.zhi h2{ width:480px; float:left; font-size:36px; font-family: "汉仪细中圆简"; height:80px; line-height:80px; text-align:center; font-weight:normal; color:#FFF;}
+.xiang{ width:640px; overflow:hidden}
+.xiang dt{ border-bottom: solid 1px #f0f0f0; height:50px; line-height:50px; text-align:center; font-size:20px}
+.xiang dd{ width:620px; padding:10px; overflow:hidden}
+.xiang dd ol{ display:inline; overflow:hidden}
+.xiang dd ol li{ width:290px; float:left; border: solid 1px #f0f0f0; overflow:hidden; margin-left:10px; height:320px; }
+.xiang dd ul{ display:inline; padding:5px ;}
+.xiang dd ul li{ padding:0px 0px 15px 0px; font-size:18px; text-indent:2em;}
+
+

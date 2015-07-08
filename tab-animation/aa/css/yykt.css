@@ -1,0 +1,18 @@
+/* CSS Document */
+body{ line-height:32px; }
+body *,h2,h3,p,ul,li,dl,dt,dd{ display:block; list-style: none; margin:0px; padding:0px;font-family: "汉仪细中圆简"}
+a:hover{ color:#CCC}
+a:visited{ text-decoration: underline}
+a:link{ text-decoration:none}
+.header,.zhi{ width:640px; margin:0px auto; overflow:hidden; background:#FFF}
+.zhi{ height:80px; width:640px; background:#ff6478; }
+.zhi div{ width:80px; float:left; height:80px; line-height:80px;}
+.zhi div img{margin:0px auto; padding:24px 0px}
+.zhi span{ width:80px; float:right; height:80px; line-height:80px;}
+.zhi span img{ margin:0px auto; padding:17px 0px }
+.zhi h2{ width:480px; float:left; font-size:36px; font-family: "汉仪细中圆简"; height:80px; line-height:80px; text-align:center; font-weight:normal; color:#FFF;}
+.ke dd{ width:640px; overflow:hidden}
+.ke dd ul{ display:inline}
+.ke dd ul li{ height:100px; line-height:100px; font-size:20px;}
+.ke dd ul li img{ width:70px; float:left; padding:15px;}
+.ke dd ul li.cli2{ background:#f4f4f4}

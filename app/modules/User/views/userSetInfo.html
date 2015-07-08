@@ -1,0 +1,56 @@
+<div class="userSet-info" my-userinfo>
+	<nav class="userSet-info-navbar clearfix">
+		<div class="userSet-info-navbar-left">
+			<a href="#/user/set"><img src="./modules/User/images/user-arrow-prev.png" alt=""></a>
+		</div>
+		<div class="userSet-info-navbar-right">
+			
+		</div>
+	</nav>
+	<form novalidate name="myForm" ng-submit="submit()">
+		<div class="userSet-info-content">
+			<section class="photo">
+				<div class="photo-wrap">
+					<img src="./modules/User/images/userSet-info-camera.png" alt="">
+					<p>头像设置</p>
+				</div>
+			</section>
+			<section class="info">
+				<div class="info-container">
+					<div class="info-wrap input">
+						<input type="text" name="username" ng-model="user.username" placeholder="{{ user.username }}" >
+					</div>
+					<div class="info-wrap input">
+						<input type="text" name="birthday" ng-model="user.birthday" placeholder="{{ user.birthday }}">
+					</div>
+					<div class="info-wrap sex clearfix">
+						<div class="boy" ng-class="{ active:user.sex=='M' }" ng-click="changeSex('boy')">
+							<div class="img" >
+								<img src="./modules/User/images/base-sex-boy.png" alt="" ng-if=" user.sex=='F'">
+								<img src="./modules/User/images/base-sex-boy-active.png" alt="" ng-if=" user.sex=='M'">
+							</div>
+							<span>男生</span>
+						</div>
+						<div class="girl" ng-class="{ active:user.sex=='F' }" ng-click="changeSex('girl')">
+							<div class="img" >
+								<img src="./modules/User/images/base-sex-girl.png" alt="" ng-if=" user.sex=='M'">
+								<img src="./modules/User/images/base-sex-girl-active.png" alt="" ng-if=" user.sex=='F'">
+							</div>
+							<span>女生</span>
+						</div>
+					</div>
+					<div class="info-wrap link">
+						<a href="#/user/set/identify">
+							<span>信息认证</span>
+							<img src="./modules/User/images/user-arrow-next.png" alt="">
+						</a>
+					</div>
+					<div class="info-wrap save">
+						<button ng-disabled="myForm.$invalid">保存</button>
+					</div>
+				</div>
+				
+			</section>
+		</div>
+	</form>
+</div>

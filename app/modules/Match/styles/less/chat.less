@@ -1,0 +1,140 @@
+.Chat{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 640px;
+	height: 100%;
+	background: url(../modules/Match/images/base-bg.jpg) no-repeat;
+	background-size: 100%;
+	overflow: auto;
+	.chat-navbar{
+		position: fixed;
+		z-index: 100;
+		width: 640px;
+		left: 0;
+		topp: 0;
+		box-sizing:border-box;
+		padding: 10px 20px;
+		box-shadow: 0 5px 5px #7c7d7e; 
+		background: url(../modules/Match/images/base-bg.jpg) no-repeat;
+
+		.chat-navbar-left{
+			float: left;
+			font-size: 30px;
+			color: #ffffff;
+			font-family: "微软雅黑";
+			img{
+				vertical-align: middle;
+			}
+			span{
+				font-size: 32px;
+				color: #ffffff;
+				font-family: "微软雅黑";
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+		.chat-navbar-right{
+			float: right;
+
+			img{
+				vertical-align: middle;
+			}
+			span{
+				font-size: 32px;
+				color: #ffffff;
+				font-family: "微软雅黑";
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	.chat-content{
+		.chat-content-container{
+			position: relative;
+			width: 600px;
+			margin: 100px auto 80px auto;
+			overflow: auto;
+			box-sizing:border-box;
+			
+			.message{
+				position: relative;
+				margin: 25px 0;
+				overflow: hidden;
+				p{
+					display: inline-block;
+					font-size: 30px;
+					font-family: "微软雅黑";
+					color: #000000;
+					max-width: 400px;
+					padding: 20px;
+					word-wrap: break-word;
+					border-radius: 20px;
+					text-align: left;
+					letter-spacing: 2px;
+				}
+				span{
+					display: inline-block;
+					vertical-align: bottom;
+					img{
+						display: block;
+						width: 73px;
+						height: 73px;
+						border-radius: 100%;
+					}
+				}
+			}
+			.send{
+				text-align: right;
+				p{
+					background: #ffffff;
+				}
+				span{
+					margin-left: 20px;
+				}
+			}
+			.receive{
+				text-align: left;
+				p{
+					background: #7ed321;
+				}
+				span{
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+
+	.chat-input{
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 640px;
+		height: 90px;
+		background: #9d9e9a;
+		padding-top: 10px;
+		
+		img{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		img:nth-of-type(1){
+			margin-left: 10px;
+		}
+		input{
+			width: 490px;
+			height: 80px;
+			border: none;
+			font-size: 40px;
+			color: #000000;
+			background: #cacccb;
+			font-family: "微软雅黑";
+			text-indent: 40px;
+			outline: none;
+			vertical-align: middle;
+			border-radius: 8px;
+		}
+
+	}
+}

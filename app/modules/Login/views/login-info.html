@@ -1,0 +1,42 @@
+<div class="login-info">
+	<form novalidate name="myForm" ng-submit="submit()" my-logininfoform >
+		<div class="login-info-content">
+			<section class="photo">
+				<div class="photo-wrap">
+					<img src="./modules/Login/images/userSet-info-camera.png" alt="">
+					<p>头像设置</p>
+				</div>
+			</section>
+			<section class="info">
+				<div class="info-container">
+					<div class="info-wrap input" ng-class="{success : myForm.name.$valid, danger : myForm.name.$invalid}">
+						<input type="text" name="name" ng-model="user.name" placeholder="请输入您的昵称" required>
+					</div>
+					<div class="info-wrap input" ng-class="{success : myForm.birth.$valid, danger : myForm.birth.$invalid}">
+						<input type="date" name="birth" ng-model="user.birth" placeholder="年龄" required>
+					</div>
+					<div class="info-wrap sex clearfix success">
+						<div class="boy" ng-class="{active:user.sex=='M'}" ng-click="changeSex('boy')">
+							<div class="img" >
+								<img src="./modules/Login/images/base-sex-boy.png" alt="" ng-if="user.sex=='F'">
+								<img src="./modules/Login/images/base-sex-boy-active.png" alt="" ng-if="user.sex=='M'">
+							</div>
+							<span>男生</span>
+						</div>
+						<div class="girl" ng-class="{active:user.sex=='F'}" ng-click="changeSex('girl')">
+							<div class="img" >
+								<img src="./modules/Login/images/base-sex-girl.png" alt="" ng-if="user.sex=='M'">
+								<img src="./modules/Login/images/base-sex-girl-active.png" alt="" ng-if="user.sex=='F'">
+							</div>
+							<span>女生</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<nav class="login-info-navbar">
+			<button type="button" ng-click="goPrev()">返回</button>
+			<button type="submit" ng-disabled="myForm.$invalid">保存</button>
+		</nav>
+	</form>
+</div>

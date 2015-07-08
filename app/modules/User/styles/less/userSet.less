@@ -1,0 +1,83 @@
+.userSet{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../modules/User/images/base-bg.jpg) no-repeat;
+	background-size: 100%;
+	overflow: auto;
+	.userSet-navbar{
+		position: relative;
+		width: 100%;
+
+		box-sizing:border-box;
+		padding: 10px 20px;
+		box-shadow: 0 5px 5px #7c7d7e; 
+
+		.userSet-navbar-left{
+			float: left;
+			img{
+				
+			}
+		}
+		.userSet-navbar-right{
+			float: right;
+			img{
+				
+			}
+		}
+	}
+
+	.userSet-list{
+		background: #f8f8f8;
+		ul{
+			background: #ffffff;
+			padding: 15px 35px 0 35px;
+			li{
+				padding: 36px 30px 36px 10px;
+				border-bottom: 1px solid #eeeeed;
+				a{
+					display: block;
+
+					img:nth-of-type(1){
+						margin-right: 60px;
+					}
+					img:nth-of-type(2){
+						float: right;
+					}
+					span{
+						font-family: "微软雅黑";
+						font-size: 36px;
+						color: #000000;
+						letter-spacing: 5px;
+					}
+				}
+			}
+		}
+		ul.primary{
+		
+			li{
+
+			}
+		}
+		ul.secondary{
+			margin-top: 35px;
+			li.btn{
+				padding: 30px 10px;
+				.exit{
+					background: #ff5a54;
+					font-family: "微软雅黑";
+					font-size: 36px;
+					color: #ffffff;
+					letter-spacing: 4px;
+					width: 100%;
+					height: 100px;
+
+					border: none;
+					border-radius: 4px;
+				}
+			}
+		}
+	}
+}
